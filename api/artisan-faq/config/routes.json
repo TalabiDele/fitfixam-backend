@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/artisan-faqs",
+      "handler": "artisan-faq.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artisan-faqs/count",
+      "handler": "artisan-faq.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artisan-faqs/:id",
+      "handler": "artisan-faq.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/artisan-faqs",
+      "handler": "artisan-faq.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/artisan-faqs/:id",
+      "handler": "artisan-faq.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/artisan-faqs/:id",
+      "handler": "artisan-faq.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artisan_reviews",
+  "info": {
+    "name": "Artisan Reviews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "review": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "integer"
+    },
+    "user": {
+      "via": "artisan_reviews",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

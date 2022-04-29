@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "client_faqs",
+  "info": {
+    "name": "Client FAQ"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}

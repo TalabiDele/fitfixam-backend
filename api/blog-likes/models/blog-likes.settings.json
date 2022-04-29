@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_likes",
+  "info": {
+    "name": "blog likes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "like": {
+      "type": "boolean"
+    },
+    "blog_post": {
+      "model": "blog-posts",
+      "via": "blog_likes"
+    }
+  }
+}

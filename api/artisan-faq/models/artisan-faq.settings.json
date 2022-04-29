@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artisan_faqs",
+  "info": {
+    "name": "Artisan Faq"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "text"
+    },
+    "answer": {
+      "type": "text"
+    }
+  }
+}

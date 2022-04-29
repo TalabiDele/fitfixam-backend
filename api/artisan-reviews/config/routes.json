@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/artisan-reviews",
+      "handler": "artisan-reviews.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artisan-reviews/count",
+      "handler": "artisan-reviews.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artisan-reviews/:id",
+      "handler": "artisan-reviews.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/artisan-reviews",
+      "handler": "artisan-reviews.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/artisan-reviews/:id",
+      "handler": "artisan-reviews.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/artisan-reviews/:id",
+      "handler": "artisan-reviews.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

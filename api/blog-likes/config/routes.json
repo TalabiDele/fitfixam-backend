@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/blog-likes",
+      "handler": "blog-likes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blog-likes/count",
+      "handler": "blog-likes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/blog-likes/:id",
+      "handler": "blog-likes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/blog-likes",
+      "handler": "blog-likes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/blog-likes/:id",
+      "handler": "blog-likes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/blog-likes/:id",
+      "handler": "blog-likes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
