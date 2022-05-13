@@ -129,6 +129,10 @@
     "likes": {
       "via": "users_permissions_user",
       "collection": "likes"
+    },
+    "user_category": {
+      "model": "user-category",
+      "via": "users"
     }
   }
 }

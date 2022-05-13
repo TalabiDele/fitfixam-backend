@@ -20,9 +20,9 @@
       "model": "posts"
     },
     "users_permissions_user": {
+      "via": "likes",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "likes"
+      "model": "user"
     }
   }
 }

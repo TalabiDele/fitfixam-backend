@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_categories",
+  "info": {
+    "name": "user_category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Carpenter": {
+      "type": "string"
+    },
+    "Plumber": {
+      "type": "string"
+    },
+    "Electrician": {
+      "type": "string"
+    },
+    "users": {
+      "via": "user_category",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
