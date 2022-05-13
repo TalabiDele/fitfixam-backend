@@ -131,8 +131,8 @@
       "collection": "likes"
     },
     "user_category": {
-      "model": "user-category",
-      "via": "users"
+      "via": "users",
+      "model": "user-category"
     }
   }
 }

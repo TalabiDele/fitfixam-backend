@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "user_categories",
   "info": {
-    "name": "user_category"
+    "name": "user_category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,13 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Carpenter": {
-      "type": "string"
-    },
-    "Plumber": {
-      "type": "string"
-    },
-    "Electrician": {
+    "category": {
       "type": "string"
     },
     "users": {
