@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carpenters",
+  "info": {
+    "name": "carpenters"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carpenter": {
+      "type": "string"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "carpenter"
+    }
+  }
+}

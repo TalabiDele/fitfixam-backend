@@ -130,9 +130,13 @@
       "via": "users_permissions_user",
       "collection": "likes"
     },
+    "carpenter": {
+      "via": "users_permissions_users",
+      "model": "carpenters"
+    },
     "user_category": {
-      "via": "users",
-      "model": "user-category"
+      "via": "users_permissions_users",
+      "model": "user-categories"
     }
   }
 }

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/user-categories",
-      "handler": "user-category.find",
+      "path": "/carpenters",
+      "handler": "carpenters.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/user-categories/count",
-      "handler": "user-category.count",
+      "path": "/carpenters/count",
+      "handler": "carpenters.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/user-categories/:id",
-      "handler": "user-category.findOne",
+      "path": "/carpenters/:id",
+      "handler": "carpenters.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/user-categories",
-      "handler": "user-category.create",
+      "path": "/carpenters",
+      "handler": "carpenters.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/user-categories/:id",
-      "handler": "user-category.update",
+      "path": "/carpenters/:id",
+      "handler": "carpenters.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/user-categories/:id",
-      "handler": "user-category.delete",
+      "path": "/carpenters/:id",
+      "handler": "carpenters.delete",
       "config": {
         "policies": []
       }

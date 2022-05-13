@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "user_categories",
   "info": {
-    "name": "user_category",
-    "description": ""
+    "name": "user categories"
   },
   "options": {
     "increments": true,
@@ -12,13 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "category": {
+    "categories": {
       "type": "string"
     },
-    "users": {
-      "via": "user_category",
+    "users_permissions_users": {
       "plugin": "users-permissions",
-      "collection": "user"
+      "collection": "user",
+      "via": "user_category"
     }
   }
 }
