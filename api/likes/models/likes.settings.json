@@ -16,10 +16,10 @@
       "via": "likes",
       "model": "posts"
     },
-    "users_permissions_user": {
-      "via": "likes",
+    "user": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "likes"
     }
   }
 }

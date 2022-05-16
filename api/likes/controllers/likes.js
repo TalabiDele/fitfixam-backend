@@ -16,7 +16,7 @@ module.exports = {
       ctx.throw(400, "Please only pas id for the post");
     }
 
-    const realPost = await strapi.services.post.findOne({
+    const realPost = await strapi.services.posts.findOne({
       id: post,
     });
 
@@ -40,15 +40,15 @@ module.exports = {
     }
 
     // Update the likes counter
-    const { likes } = realPost;
-    const update = await starpi.services.post.update(
-      {
-        id: post,
-      },
-      {
-        likes: likes + 1,
-      }
-    );
+    // const { likes } = realPost;
+    // const update = await strapi.services.posts.update(
+    //   {
+    //     id: post,
+    //   },
+    //   {
+    //     likes: likes + 1,
+    //   }
+    // );
 
     return sanitizeEntity(entity, { model: strapi.models.likes });
   },

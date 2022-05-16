@@ -126,10 +126,6 @@
       "via": "user",
       "collection": "artisan-reviews"
     },
-    "likes": {
-      "via": "users_permissions_user",
-      "collection": "likes"
-    },
     "carpenter": {
       "via": "users_permissions_users",
       "model": "carpenters"
@@ -137,6 +133,10 @@
     "user_category": {
       "via": "users_permissions_users",
       "model": "user-categories"
+    },
+    "likes": {
+      "via": "user",
+      "collection": "likes"
     }
   }
 }
