@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "like": {
-      "type": "boolean"
-    },
     "post": {
       "via": "likes",
       "model": "posts"

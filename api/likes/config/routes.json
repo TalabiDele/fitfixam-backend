@@ -17,14 +17,6 @@
       }
     },
     {
-      "method": "GET",
-      "path": "/likes/:id",
-      "handler": "likes.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "POST",
       "path": "/likes",
       "handler": "likes.create",
@@ -33,16 +25,8 @@
       }
     },
     {
-      "method": "PUT",
-      "path": "/likes/:id",
-      "handler": "likes.update",
-      "config": {
-        "policies": []
-      }
-    },
-    {
       "method": "DELETE",
-      "path": "/likes/:id",
+      "path": "/likes/:postId",
       "handler": "likes.delete",
       "config": {
         "policies": []
