@@ -2,10 +2,18 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/likes",
+      "path": "/likes/given",
       "handler": "likes.find",
       "config": {
-        "policies": []
+        "policies": ["isTargetUserLoggedIn"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/likes/received",
+      "handler": "likes.find",
+      "config": {
+        "policies": ["postAuthorIsMe"]
       }
     },
     {
@@ -26,7 +34,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/likes/:postId",
+      "path": "/likes/:postId.id",
       "handler": "likes.delete",
       "config": {
         "policies": []
