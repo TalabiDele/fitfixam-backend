@@ -42,7 +42,7 @@
     },
     {
       "method": "DELETE",
-      "path": "/likes/:postId.id",
+      "path": "/likes/:postId",
       "handler": "likes.delete",
       "config": {
         "policies": []

@@ -68,6 +68,8 @@ module.exports = {
       user: user.id,
     });
 
+    console.log(post);
+
     if (entity.length) {
       const { likes } = entity[0].post;
       const updatePost = await strapi.services.posts.update(
