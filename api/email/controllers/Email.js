@@ -13,9 +13,14 @@ module.exports = {
     const sendTo = body.email;
     strapi.log.debug(`Trying to send an email to ${sendTo}`);
 
+    await strapi.plugins[
+      "users-permissions"
+    ].services.user.sendConfirmationEmail(body);
+
     // try {
     //   const emailOptions = {
     //     to: sendTo,
+    //     to: "info@fitfixam.com",
     //     subject: "This is a test",
     //     html: `<h1>Welcome!</h1><p>This is a test HTML email.</p>`,
     //   };
@@ -27,31 +32,32 @@ module.exports = {
     //   ctx.send({ error: "Error sending email" });
     // }
 
-    await strapi.plugins["email"].services.email.send({
-      from: "<info@fitfixam.com>",
-      to: sendTo,
-      to: "fitfixam@gmail.com",
-      subject: "Hello",
-      text: "Testing some Mailgun awesomeness!",
-    });
+    // await strapi.plugins["email"].services.email.send({
+    //   from: "<info@fitfixam.com>",
+    //   to: sendTo,
+    //   to: "fitfixam@gmail.com",
+    //   subject: "Hello",
+    //   text: "Testing some Mailgun awesomeness!",
+    // });
 
-    // const emailTemplate = {
-    //   subject: "Welcome <%= user.username %>",
-    //   text: `Welcome on Fitfixam!
-    //       Your account is now linked with: <%= user.email %>.`,
-    //   html: `<h1>Welcome on Fitfixam!</h1>
-    //       <p>Your account is now linked with: <%= user.email %>.<p>`,
-    // };
+    const emailTemplate = {
+      to: "Bob <%= body.username %>",
+      subject: "Welcome <%= user.username %>",
+      text: `Welcome on Fitfixam!
+          Your account is now linked with: <%= user.email %>.`,
+      // html: `<h1>Welcome on Fitfixam!</h1>
+      //     <p>Your account is now linked with: <%= user.email %>.<p>`,
+    };
 
-    // await strapi.plugins.email.services.email.sendTemplatedEmail(
-    //   {
-    //     to: sendTo,
-    //     // from: is not specified, so it's the defaultFrom that will be used instead
-    //   },
-    //   emailTemplate,
-    //   {
-    //     user: _.pick(user, ["username", "email", "username"]),
-    //   }
-    // );
+    await strapi.plugins.email.services.email.sendTemplatedEmail(
+      {
+        to: sendTo,
+        // from: is not specified, so it's the defaultFrom that will be used instead
+      },
+      emailTemplate,
+      {
+        user: _.pick(body, ["username", "email", "username"]),
+      }
+    );
   },
 };

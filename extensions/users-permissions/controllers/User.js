@@ -18,7 +18,9 @@ module.exports = {
     const userQuery = await strapi.query("user", "users-permissions");
     const userWithMedia = await userQuery.findOne({ id: ctx.state.user.id });
 
-    const data = sanitizeUser(userWithMedia, { model: userQuery.model });
+    const data = sanitizeUser(userWithMedia, {
+      model: userQuery.model,
+    });
     ctx.send(data);
   },
 };

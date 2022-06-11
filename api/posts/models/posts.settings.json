@@ -47,6 +47,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "post_likes": {
+      "via": "post",
+      "collection": "post-likes"
     }
   }
 }

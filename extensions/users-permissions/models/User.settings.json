@@ -137,6 +137,10 @@
     "likes": {
       "via": "user",
       "collection": "likes"
+    },
+    "post_likes": {
+      "via": "user",
+      "collection": "post-likes"
     }
   }
 }
