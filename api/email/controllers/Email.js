@@ -41,12 +41,12 @@ module.exports = {
     // });
 
     const emailTemplate = {
-      to: "Bob <%= body.username %>",
+      to: sendTo,
       subject: "Welcome <%= user.username %>",
       text: `Welcome on Fitfixam!
           Your account is now linked with: <%= user.email %>.`,
-      // html: `<h1>Welcome on Fitfixam!</h1>
-      //     <p>Your account is now linked with: <%= user.email %>.<p>`,
+      html: `<h1>Welcome on Fitfixam!</h1>
+          <p>Your account is now linked with: <%= user.email %>.<p>`,
     };
 
     await strapi.plugins.email.services.email.sendTemplatedEmail(
