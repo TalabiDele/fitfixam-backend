@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artisan_ratings",
+  "info": {
+    "name": "artisan rating"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rating": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 1
+    },
+    "rating_text": {
+      "type": "text"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "artisan_ratings"
+    },
+    "user_posted": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "artisan_ratings"
+    }
+  }
+}

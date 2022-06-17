@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/artisan-ratings",
+      "handler": "artisan-rating.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artisan-ratings/count",
+      "handler": "artisan-rating.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/artisan-ratings/:id",
+      "handler": "artisan-rating.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/artisan-ratings",
+      "handler": "artisan-rating.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/artisan-ratings/:id",
+      "handler": "artisan-rating.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/artisan-ratings/:id",
+      "handler": "artisan-rating.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

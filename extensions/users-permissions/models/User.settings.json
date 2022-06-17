@@ -141,6 +141,10 @@
     "post_likes": {
       "via": "user",
       "collection": "post-likes"
+    },
+    "artisan_ratings": {
+      "via": "user_posted",
+      "collection": "artisan-rating"
     }
   }
 }
