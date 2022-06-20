@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/artisan-reviews",
-      "handler": "artisan-reviews.find",
+      "path": "/ratings",
+      "handler": "rating.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/artisan-reviews/count",
-      "handler": "artisan-reviews.count",
+      "path": "/ratings/count",
+      "handler": "rating.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/artisan-reviews/:id",
-      "handler": "artisan-reviews.findOne",
+      "path": "/ratings/:id",
+      "handler": "rating.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/artisan-reviews",
-      "handler": "artisan-reviews.create",
+      "path": "/ratings",
+      "handler": "rating.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/artisan-reviews/:id",
-      "handler": "artisan-reviews.update",
+      "path": "/ratings/:id",
+      "handler": "rating.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/artisan-reviews/:id",
-      "handler": "artisan-reviews.delete",
+      "path": "/ratings/:id",
+      "handler": "rating.delete",
       "config": {
         "policies": []
       }

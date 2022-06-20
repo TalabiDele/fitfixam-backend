@@ -15,9 +15,9 @@
       "type": "string"
     },
     "users_permissions_users": {
+      "via": "user_category",
       "plugin": "users-permissions",
-      "collection": "user",
-      "via": "user_category"
+      "collection": "user"
     }
   }
 }

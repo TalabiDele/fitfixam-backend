@@ -26,9 +26,9 @@
       "via": "artisan_ratings"
     },
     "user_posted": {
+      "via": "artisan_ratings",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "artisan_ratings"
+      "model": "user"
     }
   }
 }

@@ -122,10 +122,6 @@
     "artisan_type": {
       "type": "text"
     },
-    "artisan_reviews": {
-      "via": "user",
-      "collection": "artisan-reviews"
-    },
     "carpenter": {
       "via": "users_permissions_users",
       "model": "carpenters"
@@ -145,6 +141,18 @@
     "artisan_ratings": {
       "via": "user_posted",
       "collection": "artisan-rating"
+    },
+    "ratings": {
+      "via": "user_rating",
+      "collection": "rating"
+    },
+    "user_rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 5
+    },
+    "total_rating": {
+      "type": "biginteger"
     }
   }
 }

@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "artisan_reviews",
+  "collectionName": "ratings",
   "info": {
-    "name": "Artisan Reviews"
+    "name": "rating",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,16 +12,21 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "review": {
-      "type": "text"
+    "total": {
+      "type": "biginteger"
     },
-    "rating": {
+    "rate": {
       "type": "integer"
     },
     "user": {
-      "via": "artisan_reviews",
+      "via": "ratings",
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "user_rating": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "ratings"
     }
   }
 }
