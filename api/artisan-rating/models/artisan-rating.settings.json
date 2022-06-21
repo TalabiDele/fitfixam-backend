@@ -22,9 +22,14 @@
       "type": "text"
     },
     "user_rating": {
+      "via": "artisan_ratings",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "artisan_ratings"
+      "model": "user"
+    },
+    "users": {
+      "via": "artisan_rating",
+      "plugin": "users-permissions",
+      "collection": "user"
     }
   }
 }

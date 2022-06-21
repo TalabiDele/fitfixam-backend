@@ -153,6 +153,10 @@
     "artisan_ratings": {
       "via": "user_rating",
       "collection": "artisan-rating"
+    },
+    "artisan_rating": {
+      "model": "artisan-rating",
+      "via": "users"
     }
   }
 }

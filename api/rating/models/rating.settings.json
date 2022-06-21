@@ -24,9 +24,9 @@
       "model": "user"
     },
     "user_rating": {
+      "via": "ratings",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "ratings"
+      "model": "user"
     }
   }
 }
