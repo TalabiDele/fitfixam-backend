@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "artisan_ratings",
   "info": {
-    "name": "artisan rating"
+    "name": "artisan rating",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,15 +21,10 @@
     "rating_text": {
       "type": "text"
     },
-    "user": {
+    "user_rating": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "artisan_ratings"
-    },
-    "user_posted": {
-      "via": "artisan_ratings",
-      "plugin": "users-permissions",
-      "model": "user"
     }
   }
 }

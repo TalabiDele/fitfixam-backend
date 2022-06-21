@@ -138,10 +138,6 @@
       "via": "user",
       "collection": "post-likes"
     },
-    "artisan_ratings": {
-      "via": "user_posted",
-      "collection": "artisan-rating"
-    },
     "ratings": {
       "via": "user_rating",
       "collection": "rating"
@@ -153,6 +149,10 @@
     },
     "total_rating": {
       "type": "biginteger"
+    },
+    "artisan_ratings": {
+      "via": "user_rating",
+      "collection": "artisan-rating"
     }
   }
 }
