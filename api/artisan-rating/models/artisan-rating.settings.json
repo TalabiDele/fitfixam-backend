@@ -26,10 +26,10 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "users": {
-      "via": "artisan_rating",
+    "user": {
       "plugin": "users-permissions",
-      "collection": "user"
+      "model": "user",
+      "via": "rating_artisan"
     }
   }
 }

@@ -154,9 +154,9 @@
       "via": "user_rating",
       "collection": "artisan-rating"
     },
-    "artisan_rating": {
-      "model": "artisan-rating",
-      "via": "users"
+    "rating_artisan": {
+      "via": "user",
+      "collection": "artisan-rating"
     }
   }
 }
