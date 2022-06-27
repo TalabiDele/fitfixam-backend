@@ -20,6 +20,6 @@ module.exports = {
     // if (found) {
     //   ctx.throw(400, "You already liked this post");
     // }
-    return sanitizeEntity(entity, { model: strapi.models.post_likes });
+    // return sanitizeEntity(entity, { model: strapi.models.post_likes });
   },
 };
