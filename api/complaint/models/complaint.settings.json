@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "complaints",
+  "info": {
+    "name": "complaint",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "richtext"
+    }
+  }
+}
