@@ -23,4 +23,6 @@ services:
         value: Fitfixam
       - key: SIB_DEFAULT_REPLY_TO # Imported from Heroku app
         value: info@fitfixam.com
+        - key: RENDER_EXTERNAL_HOSTNAME
+         value: https://fitfixamdatabase.onrender.com
 
