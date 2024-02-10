@@ -23,3 +23,5 @@ module.exports = ({ env }) => ({
     },
   },
 });
+
+// postgresql://postgres:B4Ef4c4-GCEBbAEE*dDa3*F*4-BCDccF@:/railway
